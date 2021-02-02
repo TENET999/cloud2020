@@ -49,7 +49,7 @@ public class FlowLimitController {
         return "------testD";
 
     }
-//22
+
     @GetMapping("/testHotKey")
     @SentinelResource(value = "testHotKey", blockHandler = "deal_testHotKey")
     public String testHotKey(@RequestParam(value = "p1", required = false)String p1,
